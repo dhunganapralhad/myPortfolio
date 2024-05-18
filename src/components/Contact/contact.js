@@ -1,11 +1,11 @@
 import React, { useRef } from 'react'
 import './contact.css'
-import NextNepal from '../../assets/walmart.png'
+import NextNepal from '../../assets/nextNepal.png'
 import YopoSuperApp from '../../assets/microsoft.png'
 import FacebookIcon from '../../assets/facebook-icon.png'
 import InstagramIcon from '../../assets/instagram.png'
 import TwitterIcon from '../../assets/twitter.png'
-import LinkedInIcon from '../../assets/youtube.png'
+import LinkedInIcon from '../../assets/LinkedIn.png'
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -25,6 +25,7 @@ const Contact = () => {
             },
           );
       };
+
   return (
     <section id='contactPage'>
         <div id='clients'>
@@ -46,10 +47,10 @@ const Contact = () => {
                 <textarea className='msg' name='message' rows='5' placeholder='Write your message here...'></textarea>
                 <button type='submit' value='Send' className='submitBtn'>Submit</button>
                 <div className='links'>
-                    <img src={FacebookIcon} alt='Facebook' className='link'></img>
-                    <img src={InstagramIcon} alt='Instagram' className='link'></img>
-                    <img src={TwitterIcon} alt='Twitter' className='link'></img>
-                    <img src={LinkedInIcon} alt='LinkedIn' className='link'></img>
+                    <a href='https://www.facebook.com/pralad.dhungana.3/'><img src={FacebookIcon} alt='Facebook' className='link'></img></a>
+                    <a href='https://www.instagram.com/dhungana_pralhad/'><img src={InstagramIcon} alt='Instagram' className='link'/></a>
+                    <a href='https://x.com/162252e176874d4'><img src={TwitterIcon} alt='Twitter' className='link'/></a>
+                    <a href='www.linkedin.com/in/dhunganapralhad'><img src={LinkedInIcon} alt='LinkedIn' className='link'/></a>
                 </div>
             </form>
         </div>
